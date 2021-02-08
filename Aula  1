@@ -1,4 +1,47 @@
 
 Ciência de Dados
 
-https://www.youtube.com/watch?v=20a-LWz95rw&feature=youtu.be
+Comentários:
+
+Áreas de atuação: 
+
+1. Automação de tarefas e processos
+2. Ciência de dados >> BI >> AI
+3. Desinvolvimento de sites, apps e programas
+
+google Colab
+drive
+
+comunidade python 
+
+-------------------------------------------------------------------
+
+Código
+
+/* 
+Passo a passo de construação do código:
+  1. Importar base de dados
+  2. Calcular o faturamento de cada loja
+  3. Calcular a qtd. de produtos vendidos de cada loja
+  4. Calcular o ticket medio dos produtos de cada loja
+  5. Enviar e-mail para diretória
+  6. Enviar e-mail para cada loja
+ */ 
+
+-------------------------------------------------------------------
+
+Passo 1: importar base de dados
+
+import pandas as pd
+
+tabela_vendas = pd.read_excel("/content/drive/MyDrive/Python/Vendas.xlsx")
+display(tabela_vendas)
+
+-------------------------------------------------------------------
+
+Pass 2: Calcular o faturamento de cada loja
+
+tabela_faturamento = tabela_vendas[['ID Loja', 'Valor final']]
+display(tabela_faturamento)
+
+-------------------------------------------------------------------
