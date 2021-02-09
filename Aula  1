@@ -111,12 +111,15 @@ Passo 6: Enviar e-mail para cada loja
 loja = "Iguatemi Fortaleza"
 # São as linhas onde na coluna ID Loja estaá escrito Iguatemi Fortaleza
 
-tabela_loja = tabela_vendas.loc[tabela_vendas,["ID Loja"] == "Iguatemi Fortaleza" ["ID Loja", "Quantiade", "Valor Final"]]
-tabela_loja = tabela_loja.groupby("ID Loja").sum() 
-tabela_loja["ticket_medio"] = tabela_loja["Valor Final"]/ tabela_loja["Quantidade"]
-display(tabela_loja)
+lista_lojas = tabela_vendas["ID Loja"].unique()
 
-
-
+for loja in lista_lojas: 
+  tabela_loja = tabela_vendas.loc[tabela_vendas,["ID Loja"] == "Iguatemi Fortaleza" ["ID Loja", "Quantiade", "Valor Final"]]
+  tabela_loja = tabela_loja.groupby("ID Loja").sum() 
+  tabela_loja["ticket_medio"] = tabela_loja["Valor Final"]/ tabela_loja["Quantidade"]
+  display(tabela_loja)
+  enviar_email(loja, tabela_loja)
+ 
+ # Todas as linhas do python são em cochete.
 
 -------------------------------------------------------------------
