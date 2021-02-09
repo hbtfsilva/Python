@@ -5,13 +5,39 @@ Inteligência Artificial
 Comentários:
 
 https://www.kaggle.com/
+O pandas é a biblioteca do python (pacote de códigos) que integra com excel.
 
 --------------------------------------------------------------------------------------
 
-Logíca de programação:
+Logíca
 
-Passo 1: Importar a base de dados
+/ * 
+Passo a passo de construação do código:
+  1. Importar base de dados
+  2. Tratamento da base de dados
+     - Excluir/ corrigir linhas e colunas vazias
+     - Ajeitar as colunas importantes
+     - Excluir colunas inuteis
+  3. Analisar a base de dados
+     - Queremos descobrir os principais motivos do cancelamento do cartão
+  * / 
+
+--------------------------------------------------------------------------------------
+
+Passo 1: Importar base de dados
+
+import pandas as pd
+
+tabela_clientes = pd.read_csv("CAMINHO", encoding="latin1") # correção do erro --> encoding="latin1"
+display(tabela_clientes) # print organizado
+print(tabela_clientes) # exibe só texto
+
+# erro: 'utf-8' geralmente erro de caracteres especiais.
+
+--------------------------------------------------------------------------------------
+
 Passo 2: Tratamento da base de dados
-Passo 3: 
-Passo 4: 
+
+
+
 
