@@ -54,10 +54,10 @@ display(tabela_quantidade)
 
 -------------------------------------------------------------------
 
-@ ticket medio (faturamento/quantidade) @
-@ duplo cochete para varias colunas e um cochete quando for uma coluna só @
-@ o ponto (.) divide os valores 25,00 por 25.00 @ 
-@ toda também no python se chama "dataframe" @
+# ticket medio (faturamento/quantidade)
+# duplo cochete para varias colunas e um cochete quando for uma coluna só
+# o ponto (.) divide os valores 25,00 por 25.00 
+# toda também no python se chama "dataframe" 
 
 Passo 4: Calcular o ticket medio dos produtos de cada loja
 
@@ -69,7 +69,38 @@ display(ticket_medio)
 Passo 5: Enviar o e-mail
 Função enviar e-mail
 
-@ criar função no python @
+# criar função no python #
 def enviar_email(nome_da_loja, tabela):
+
+import smtplib
+import email.message
+
+server = smtplib.SMTP('smtp.gmail.com:587')  
+corpo_email = "Corpo do E-mail" # vamos editar 
   
+msg = email.message.Message()
+msg['Subject'] = "Assunto do E-mail" # vamos editar
+  
+# Fazer antes (apenas na 1ª vez): Ativar Aplicativos não Seguros.
+# Gerenciar Conta Google -> Segurança -> Aplicativos não Seguros -> Habilitar
+# Caso mesmo assim dê o erro: smtplib.SMTPAuthenticationError: (534,
+# Você faz o login no seu e-mail e depois entra em: https://accounts.google.com/DisplayUnlockCaptcha
+
+msg['From'] = 'remetente@gmail.com' # vamos editar
+msg['To'] = 'destinatario@gmail.com' # vamos editar
+password = "senha" # vamos editar
+msg.add_header('Content-Type', 'text/html')
+msg.set_payload(corpo_email )
+  
+s = smtplib.SMTP('smtp.gmail.com: 587')
+s.starttls()
+# Login Credentials for sending the mail
+s.login(msg['From'], password)
+s.sendmail(msg['From'], [msg['To']], msg.as_string().encode('utf-8'))
+print('Email enviado') 
+
+enviar_email("Diretoria", tabela_faturamento)
+
 -------------------------------------------------------------------
+
+
