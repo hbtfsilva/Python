@@ -41,7 +41,7 @@ display(tabela_vendas)
 
 Pass 2: Calcular o faturamento de cada loja
 
-tabela_faturamento = tabela_vendas[['ID Loja', 'Valor final']]
+tabela_faturamento = tabela_vendas[['ID Loja', 'Valor final']].groupby("ID Loja").sum()
 display(tabela_faturamento)
 
 -------------------------------------------------------------------
