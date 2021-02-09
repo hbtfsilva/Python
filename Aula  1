@@ -53,3 +53,23 @@ tabela_quantidade = tabela_vendas[["ID Loja", "Quantidade"]].groupby("ID Loja").
 display(tabela_quantidade)
 
 -------------------------------------------------------------------
+
+@ ticket medio (faturamento/quantidade) @
+@ duplo cochete para varias colunas e um cochete quando for uma coluna só @
+@ o ponto (.) divide os valores 25,00 por 25.00 @ 
+@ toda também no python se chama "dataframe" @
+
+Passo 4: Calcular o ticket medio dos produtos de cada loja
+
+ticket_medio = (tabela_faturamento["Valor Final"]/ tabela_quantidade["Quantidade"]).to_frame()
+display(ticket_medio)
+
+-------------------------------------------------------------------
+
+Passo 5: Enviar o e-mail
+Função enviar e-mail
+
+@ criar função no python @
+def enviar_email(nome_da_loja, tabela):
+  
+-------------------------------------------------------------------
