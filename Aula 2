@@ -73,4 +73,7 @@ for coluna in tabela_Clientes:
   2. Exibir a figura
   fig.show()
 
+O que conseguimos perceber analisando os gráficos?
+
+Analise exploratoria
 
