@@ -57,5 +57,19 @@ Como estão distribuidos os valores a serem entendidos
 display(tabela_clientes["Categoria"].value_counts())
 display(tabela_clientes["Categoria"].value_counts(normalize=True))
 
+-------------------------------------------------------------------
+
+Seu objetivo: Analisar o 80/20 # Regra de Pareto
+
+Olhar todas as caracteristicas dos clientes e descobrir os principais motivos de cancelamento
+
+import plotly.express as px # pacote de códigos que cria gráficos
+
+# Criação de gráficos (https://plotly.com/python/)
+
+1. Criar a figura
+fig = px.histogram(tabela_clientes, x="Categoria") # quantidade de itens que você tem em um valor
+2. Exibir a figura
+fig.show()
 
 
