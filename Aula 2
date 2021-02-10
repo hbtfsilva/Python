@@ -67,9 +67,10 @@ import plotly.express as px # pacote de códigos que cria gráficos
 
 # Criação de gráficos (https://plotly.com/python/)
 
-1. Criar a figura
-fig = px.histogram(tabela_clientes, x="Categoria") # quantidade de itens que você tem em um valor
-2. Exibir a figura
-fig.show()
+for coluna in tabela_Clientes:
+  1. Criar a figura
+  fig = px.histogram(tabela_clientes, x=coluna, color="Categoria") # quantidade de itens que você tem em um valor
+  2. Exibir a figura
+  fig.show()
 
 
