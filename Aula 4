@@ -1,1 +1,21 @@
+
+
 Web
+
+codição: o arquivo em excel deve está no mesmo local que do 
+programa em python que está sendo criado
+
+------------------------------------------------------------
+
+Lógica:
+
+1. Importar a base de dados
+2. Visualizar a base de dados
+3. Fazer o processo manual no sistema de cobrança
+4. Transformar o processo em código python - para uma pessoa
+5. Automatizar o processo de todas as pessoas
+6. Revisar o código e ajustar o que o for necessário
+
+------------------------------------------------------------
+
+
