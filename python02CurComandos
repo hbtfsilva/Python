@@ -1,0 +1,30 @@
+
+primeiros comandos de python:
+
+>> delimitador padrão = '' aspas simples ou "" aspas duplas;
+>> parentese = para colocar função;
+>> função = print (escrever)
+>> número não coloca aspas
+
+>>> print ('Olá, mundo!')
+Olá, mundo!
+>>> print (olá, mundo!)
+SyntaxError: invalid syntax
+>>> print (7+4)
+11
+>>> print ('7+4')
+7+4
+>>> print ('7' + '4')
+74
+>>> print ('Olá',5)
+Olá 5
+>>> 
+
+importante:
+toda variável é um objeto, toda variável pode receber valores.
+variáveis são espaços na memória para guardar informações.
+
+função = input (leia)
+
+link da aula:
+https://www.youtube.com/watch?v=31llNGKWDdo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=5
