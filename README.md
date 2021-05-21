@@ -1,2 +1,2 @@
-# pythonDB
-Curso de Python Bando de dados.
+# python
+Cursos gerais em python.
