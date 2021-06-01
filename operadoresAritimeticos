@@ -1,0 +1,39 @@
+
+https://www.youtube.com/watch?v=Vw6gLypRKmY&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=12
+
+Operadores:
+
++ = adição
+- = subtração 
+* = multiplicação
+/ = divisão
+** = potência
+// = divisão inteira
+% = resto da divisão
+
+Operandos binarios:
+
+operando pode ser um número, pode ser string, como variaveis e outros.
+
+exemplos: 
+
+8 + 2 == 10
+8 - 2 == 6
+8 * 2 == 16
+8 / 2 == 4
+8 ** 2 == 64
+5 // 2 == 2 número inteiro
+5 % 2 == 1 que corresponde ao resto da divisão entre 5 // 2
+
+Ordem de precedência:
+
+1. ()
+2. ** "ao quadrado"
+3. *,/,//,%
+4. + e -
+
+exemplos:
+
+5 + 3 * 2 == 11 
+3 * 5 + 4 ** 2 == 31
+3 * (5 + 4) ** 2 == 243
