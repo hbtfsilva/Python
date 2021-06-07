@@ -1,0 +1,33 @@
+
+>> dado é o bruto.
+>> informação a camada de sentidos que dá ao dado.
+
+sites de pesquisa:
+
+datahub.io
+data.wolrdbank.org
+data.nasa.gov
+data.gov
+dados.gov.br
+portal.inep.gov.br
+
+https://www.youtube.com/watch?v=3k_j5SKy8k0&list=PL5TJqBvpXQv5N3iV68bGBkea0HjMk98lR&index=2
+https://docs.python.org/3/tutorial/index.html
+
+instalação do pip
+
+pacotes:
+pip install pandas
+https://pandas.pydata.org/
+
+pip install numpy
+https://numpy.org/
+
+pip install scipy
+https://www.scipy.org/
+
+pip install matplitlib
+https://matplotlib.org/
+
+recursos:
+jupyter notebook
